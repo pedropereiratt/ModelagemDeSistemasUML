@@ -1,0 +1,23 @@
+CREATE TABLE `Pedidos` ( `Nome\Razão Social` TEXT NOT NULL, `CNPJ` INT NOT NULL, `Endereço` TEXT NOT NULL, `Bairro` TEXT NOT NULL, `UF` TEXT NOT NULL, `Valor da nota` FLOAT NOT NULL, `Calculo de imposto` FLOAT NOT NULL, `Frete` FLOAT NOT NULL, `Data de emissão` FLOAT NOT NULL, `Quantidade de itens` INT NOT NULL, `Código do vendedor` INT NOT NULL ); CREATE TABLE `Itens do pedido` ( `código do produto` FLOAT NOT NULL, `Quantidade do produto` INT NOT NULL ); ALTER TABLE `Pedidos` ADD CONSTRAINT `Pedidos_fk0` FOREIGN KEY (`Código do vendedor`) REFERENCES `Itens do pedido`(`código do produto`);CREATE TABLE `Pedidos` ( `Nome\Razão Social` TEXT NOT NULL, `CNPJ` INT NOT NULL, `Endereço` TEXT NOT NULL, `Bairro` TEXT NOT NULL, `UF` TEXT NOT NULL, `Valor da nota` FLOAT NOT NULL, `Calculo de imposto` FLOAT NOT NULL, `Frete` FLOAT NOT NULL, `Data de emissão` FLOAT NOT NULL, `Quantidade de itens` INT NOT NULL, `Código do vendedor` INT NOT NULL ); CREATE TABLE `Itens do pedido` ( `código do produto` FLOAT NOT NULL, `Quantidade do produto` INT NOT NULL ); ALTER TABLE `Pedidos` ADD CONSTRAINT `Pedidos_fk0` FOREIGN KEY (`Código do vendedor`) REFERENCES `Itens do pedido`(`código do produto`);CREATE TABLE `Pedidos` ( `Nome\Razão Social` TEXT NOT NULL, `CNPJ` INT NOT NULL, `Endereço` TEXT NOT NULL, `Bairro` TEXT NOT NULL, `UF` TEXT NOT NULL, `Valor da nota` FLOAT NOT NULL, `Calculo de imposto` FLOAT NOT NULL, `Frete` FLOAT NOT NULL, `Data de emissão` FLOAT NOT NULL, `Quantidade de itens` INT NOT NULL, `Código do vendedor` INT NOT NULL ); CREATE TABLE `Itens do pedido` ( `código do produto` FLOAT NOT NULL, `Quantidade do produto` INT NOT NULL ); ALTER TABLE `Pedidos` ADD CONSTRAINT `Pedidos_fk0` FOREIGN KEY (`Código do vendedor`) REFERENCES `Itens do pedido`(`código do produto`);CREATE TABLE `Pedidos` ( `Nome\Razão Social` TEXT NOT NULL, `CNPJ` INT NOT NULL, `Endereço` TEXT NOT NULL, `Bairro` TEXT NOT NULL, `UF` TEXT NOT NULL, `Valor da nota` FLOAT NOT NULL, `Calculo de imposto` FLOAT NOT NULL, `Frete` FLOAT NOT NULL, `Data de emissão` FLOAT NOT NULL, `Quantidade de itens` INT NOT NULL, `Código do vendedor` INT NOT NULL ); CREATE TABLE `Itens do pedido` ( `código do produto` FLOAT NOT NULL, `Quantidade do produto` INT NOT NULL ); ALTER TABLE `Pedidos` ADD CONSTRAINT `Pedidos_fk0` FOREIGN KEY (`Código do vendedor`) REFERENCES `Itens do pedido`(`código do produto`);CREATE TABLE `Pedidos` (
+	`Nome\Razão Social` TEXT NOT NULL,
+	`CNPJ` INT NOT NULL,
+	`Endereço` TEXT NOT NULL,
+	`Bairro` TEXT NOT NULL,
+	`UF` TEXT NOT NULL,
+	`Valor da nota` FLOAT NOT NULL,
+	`Calculo de imposto` FLOAT NOT NULL,
+	`Frete` FLOAT NOT NULL,
+	`Data de emissão` FLOAT NOT NULL,
+	`Quantidade de itens` INT NOT NULL,
+	`Código do vendedor` INT NOT NULL
+);
+
+CREATE TABLE `Itens do pedido` (
+	`código do produto` FLOAT NOT NULL,
+	`Quantidade do produto` INT NOT NULL
+);
+
+ALTER TABLE `Pedidos` ADD CONSTRAINT `Pedidos_fk0` FOREIGN KEY (`Código do vendedor`) REFERENCES `Itens do pedido`(`código do produto`);
+
+
+
